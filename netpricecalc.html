@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CollAssist - Your Destination for college assistance! </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="homepage.html"><h1>CollAssist - College Assistance</h1></a>
+    <header>
+        <div class="logo">COLLASSIST</div>
+        <nav>
+            <ul class="pagelinks">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="scores.html">Test Scores</a></li>
+                <li><a href="netpricecalc.html">Net Price Calculators</a></li>
+                <li><a href="ec.html">Extra Curricular Ideas</a></li>
+                <li><a href="finance.html">Financing</a></li>
+                <li><a href="chances.html">College Chances</a></li>
+                <li><a href="future.html">{Future Feature Sneak Peek}</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="ctc.html"><button id="ctc">Contact</button></a>
+    </header>
+    <div class="container">
+        <div class="box" id="npcbox1">
+            <h6>What is a Net Price Calculator?</h6>
+            A Net Price Calculator is an algorithm that Universities use to determine the overall cost of attendance for a student at a university. This overall cost of attendance typically includes tuition, food, and accomodation, and is based upon a number of factors that are available on the university sites. 
+        </div>
+        <div class="box" id="npcbox2">
+            <h6>How does CollAssist's Tool work?</h6>
+            This tool allows you to input universities, and access their net price calculators from our database. Users must enter the full name of the university whose NPC they wish to access. 
+        </div>
+        <div class="formbox">
+            <form id="searchForm" onsubmit="return searchArray(event)">
+                <label for="inputField">Search for INPUT:</label>
+                <input type="text" id="inputField" placeholder="Enter input to search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="resultsbox" id="results">
+            <p id="result"></p>
+        </div>
+        <script src="scripts/npcscript.js"></script>
+    </div>
+</body>

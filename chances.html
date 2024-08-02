@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CollAssist - Your Destination for college assistance! </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="homepage.html"><h1>CollAssist - College Assistance</h1></a>
+    <header>
+        <div class="logo">COLLASSIST</div>
+        <nav>
+            <ul class="pagelinks">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="scores.html">Test Scores</a></li>
+                <li><a href="netpricecalc.html">Net Price Calculators</a></li>
+                <li><a href="ec.html">Extra Curricular Ideas</a></li>
+                <li><a href="finance.html">Financing</a></li>
+                <li><a href="chances.html">College Chances</a></li>
+                <li><a href="future.html">{Future Feature Sneak Peek}</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="ctc.html"><button id="ctc">Contact</button></a>
+    </header>
+    <div class="maincontainer">
+        <div class="box" id="mainbox">
+            <h6>This tool allows you to use our software to gauge your chances at admission, based on your merits! Remember that this is a purely speculative tool, and is not intended to be used as a counselling service - it merely assists in guessing your potential. </h6>
+        </div>
+    </div>
+    <div class="chancecontainer">
+        <div class="chancebox" id="satbox">
+            <form id="satform">
+                <label for="satScore">Does your SAT score fall within a 200 point range of a set value?</label>
+                <select id="satScore" name="satScore">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <button type="button" class="finbutton" onclick="updateSAT()">Submit</button>
+            </form>
+        </div>
+        <div class="chancebox" id="ecbox">
+            <form id="ecCountForm">
+                <label for="ecCount">Number of ECs participated in:</label>
+                <input type="number" id="ecCount" name="ecCount" min="0">
+                <button type="button" class="finbutton" onclick="updateECCount()">Submit</button>
+            </form>
+        </div>
+        <div class="chancebox" id="exbox">
+            <form id="ecExcellenceForm">
+                <label for="ecExcellence">Number of ECs that are very strong (international level, >10k revenue, reputed etc.)</label>
+                <input type="number" id="ecExcellence" name="ecExcellence" min="0">
+                <button type="button" class="finbutton" onclick="updateECExcellence()">Submit</button>
+            </form>
+        </div>
+        <div class="resultsbox" id="collresult">
+        </div>
+        <script src="scripts/chancescript.js"></script>
+    </div>
+</body>
+</html>

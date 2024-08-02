@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CollAssist - Your Destination for college assistance! </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="homepage.html"><h1>CollAssist - College Assistance</h1></a>
+    <header>
+        <div class="logo">COLLASSIST</div>
+        <nav>
+            <ul class="pagelinks">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="scores.html">Test Scores</a></li>
+                <li><a href="netpricecalc.html">Net Price Calculators</a></li>
+                <li><a href="ec.html">Extra Curricular Ideas</a></li>
+                <li><a href="finance.html">Financing</a></li>
+                <li><a href="chances.html">College Chances</a></li>
+                <li><a href="future.html">{Future Feature Sneak Peek}</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="ctc.html"><button id="ctc">Contact</button></a>
+    </header>
+
+    <div class="fincontainer">
+        <div class="box" id="budget">
+            <h6>Budgeting calculator</h6>
+            <form id="budget-form">
+                <label for="income">Monthly Income:</label>
+                <input type="number" id="income" required><br>
+                <label for="expenses">Monthly Expenses:</label>
+                <input type="number" id="expenses" required><br>
+                <button class="finbutton" type="button" onclick="calculateBudget()">Calculate</button>
+            </form><br>
+            <p id="budget-result"></p>
+        </div>
+        <div class="box" id="savings">
+            <h6>Savings Calculator</h6>
+            <form id="savings-form">
+                <label for="amount">Initial Amount:</label>
+                <input type="number" id="amount" required><br>
+                <label for="rate">Annual Interest Rate (%):</label>
+                <input type="number" id="rate" step="0.01" required><br>
+                <label for="years">Number of Years:</label>
+                <input type="number" id="years" required><br>
+                <button class="finbutton" type="button" onclick="calculateSavings()">Calculate</button>
+            </form><br>
+            <p id="savings-result"></p>
+        </div>
+        <div class="box" id="loan">
+            <h6>Loan Repayment Calculator</h6>
+            <form id="loan-form">
+                <label for="principal">Loan Amount:</label>
+                <input type="number" id="principal" required><br>
+                <label for="annual-rate">Annual Interest Rate (%):</label>
+                <input type="number" id="annual-rate" step="0.01" required><br>
+                <label for="years-loan">Number of Years:</label>
+                <input type="number" id="years-loan" required><br>
+                <button class="finbutton" type="button" onclick="calculateLoan()">Calculate</button>
+            </form><br>
+            <p id="loan-result"></p>
+        </div>
+    </div>
+    <script src="scripts/finscript.js"></script>
+</body>
+</html>
