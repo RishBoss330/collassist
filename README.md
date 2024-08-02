@@ -16,4 +16,4 @@ Step 3 - Execute the homepage.html command.
 Credits for this website go to Skillthrive on YouTube for the Navigation Bar inspiration, and to PrepZone Academy Singapore for their SAT Score Table. 
 
 ---LIABILITY CLAUSES---
-CollAssist is not liable for any and all college results for students and users. It is simply a tool that acts as a convenience for students to gauge their abilities, and for low income students to understand their financial issues better. 
+CollAssist is not a college counselling service. CollAssist is not liable for any and all college results for students and users. It is simply a tool that acts as a convenience for students to gauge their abilities, and for low income students to understand their financial issues better. 
